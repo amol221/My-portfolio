@@ -1,0 +1,147 @@
+.exp_container{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    gap:2rem
+
+}
+
+.exp_container > div{
+    background: var(--color-bg-variant);
+    padding:2.4rem 5rem;
+    border-radius:2rem;
+    border:1px solid transparent;
+    transition: var(--transition);
+}
+
+.exp_container > div:hover{
+    background: transparent;
+    border-color: var(--color-primary-variant);
+    cursor: default;
+}
+
+.exp_container > div h3 {
+
+    text-align: center;
+    margin-bottom: 2rem;
+    color: var(--color-primary);
+}
+
+.exp_content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 2rem;
+}
+
+.exp_details{
+    display: flex;
+    gap:1rem;
+
+}
+
+.exp_details-icon{
+    margin-top:6px;
+    color:var(--color-primary)
+
+}
+
+
+
+.company_worked {
+   
+    margin: 2rem;
+    padding: 1.5rem;
+    border: 1px solid var(--color-bg-variant);
+    border-radius: 1.5rem;
+    /* width: 70%; */
+    /* left: 10%; */
+    position: relative;
+    color: white;
+    background: transparent;
+    transition: var(--transition);
+  }
+  
+  .company_worked:hover{
+
+    color: var(--color-bg-variant);
+    background: var(--color-white);
+
+  }
+
+  .company_worked h2 {
+    font-size: 24px;
+    margin-bottom: 8px;
+  }
+  
+  .company_worked small {
+    font-size: 14px;
+    color: #888;
+  }
+  
+  .company_worked h3 {
+    font-size: 1rem;
+    margin-top: 1rem;
+    word-wrap:break-word;
+  }
+  
+  .company_worked p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-top: 1rem;
+  }
+
+.company_worked ul{
+  line-height: 1.5rem;
+}
+
+.other_skills{
+  text-align: center;
+}
+
+
+
+
+/*==========================(medium devices/tablet)=============*/
+
+
+@media screen and (max-width: 1024px) {
+    .exp_container{
+            grid-template-columns: 1fr;
+            
+        
+    }
+    .exp_container > div{
+        width:80%;
+        padding: 2rem;
+        margin: 0 auto;
+
+    }
+}
+
+/*==========================(small devices/mobiles)=============*/
+
+@media screen and (max-width:600px) {
+
+    
+
+    .exp_container{
+       gap:1rem;
+    
+}
+
+.exp_container > div{
+    width:100%;
+    padding:2rem 1rem;
+   
+
+}
+
+
+}
+
+
+
+
+
+
+
+
